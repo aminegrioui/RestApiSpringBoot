@@ -6,11 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/events/")
+
 public class EventController {
+
     @Autowired
     EventService eventService;
-    @PostMapping("api/events/")
+
+    @RequestMapping("/")
+    public String sayHello(){
+        return "hallo amine";
+    }
+
+    @PostMapping("/events/api/events/")
     public void addEvent(@RequestBody Event event){
         eventService.addEvent(event);
     }
