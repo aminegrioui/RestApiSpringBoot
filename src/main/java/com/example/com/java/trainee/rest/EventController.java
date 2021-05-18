@@ -21,8 +21,9 @@ public class EventController {
     }
 
     @PostMapping("/events/api/events/")
-    public void addEvent(@RequestBody Event event2){
-        eventService.addEvent(event2);
+
+    public void addEvent(@RequestBody Event event1){
+        eventService.addEvent(event1);
     }
     // get all event
     @GetMapping("api/events/")
