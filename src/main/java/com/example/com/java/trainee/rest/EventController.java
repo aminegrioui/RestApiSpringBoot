@@ -14,7 +14,7 @@ public class EventController {
 
     @RequestMapping("/")
     public String sayHello(){
-        return "hallo amine";
+        return "hallo younes";
     }
 
     @PostMapping("/events/api/events/")
